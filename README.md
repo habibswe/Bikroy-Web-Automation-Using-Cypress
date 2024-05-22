@@ -5,3 +5,4 @@
    npm install cypress@latest
    Run code : npx Cypress open
    Enjoy
+   
