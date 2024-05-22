@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-# WEB_Automation_On_OrangeHRM_Using_Cypress_Cucumber
+# # Q2-Bikroy-Web-Automation-Cypress
 =======
 # cypress-cucumber-boilerplate-for-e2e-testing
 
@@ -46,7 +46,6 @@ Install project dependencies with: npm i
 * https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
 >>>>>>> bf5fd6a (upload)
 =======
-# Q2-Bikroy-Web-Automation-Cypress
 
 To run this application and install this at first install node.js  
 Then run code in terminal:  
