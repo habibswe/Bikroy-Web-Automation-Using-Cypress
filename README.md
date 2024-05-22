@@ -46,14 +46,27 @@ Install project dependencies with: npm i
 * https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
 >>>>>>> bf5fd6a (upload)
 =======
+## How to Setup and Run Cypress Tests
 
-To run this application and install this at first install node.js  
-Then run code in terminal:  
-`npm init -y`  
-`npm install cypress@latest`  
-Run code:  
-`npx cypress open`  
-Enjoy
+Follow these steps to set up Cypress and run tests:
+
+1. Initialize a new npm project with default settings:
+    ```bash
+    npm init -y
+    ```
+
+2. Install Cypress using npm:
+    ```bash
+    npm install cypress@latest
+    ```
+
+3. Run Cypress to open the Cypress Test Runner:
+    ```bash
+    npx cypress open
+    ```
+
+4. Enjoy exploring and running your tests in the Cypress Test Runner!
+
 =======
 ## How to Upload Changes to GitHub
 
