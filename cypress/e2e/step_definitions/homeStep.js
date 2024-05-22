@@ -62,6 +62,20 @@ Given('Open Browser and Visit Website',()=> {
     Then('Check that Pets & Animals logo is present',  ()=> {              
         cy.xpath(locator.petsAnimals).should('be.visible')
         // cy.xpath(locator.search).click()
+        cy.wait(2000)
+        });
+    Then('Check that Mens Fashion & Grooming logo is present',  ()=> {              
+        cy.xpath(locator.mensFashion).should('be.visible')
+        // cy.xpath(locator.search).click()
          cy.wait(2000)
         });
-    
+    Then('Check that Womens Fashion & Beauty logo is present',  ()=> {              
+        cy.xpath(locator.womensFashion).should('be.visible')
+        // cy.xpath(locator.search).click()
+        cy.wait(2000)
+        });   
+    Then('Check that Hobbies,Sports & kids logo is present',  ()=> {              
+        cy.xpath(locator.hobbiesSportsGrooming).should('be.visible')
+        // cy.xpath(locator.search).click()
+        cy.wait(2000)
+        }); 
