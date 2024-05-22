@@ -56,9 +56,29 @@ Run code:
 `npx cypress open`  
 Enjoy
 =======
-`git status`
-`git add .`
-`git commit -m "Updated file to fix issue X or added feature Y"`
-`git push origin main`
+## How to Upload Changes to GitHub
+
+Follow these steps to upload your changes to GitHub:
+
+1. Check the status of your repository:
+    ```bash
+    git status
+    ```
+
+2. Add all changes to the staging area:
+    ```bash
+    git add .
+    ```
+
+3. Commit your changes with a descriptive message:
+    ```bash
+    git commit -m "Updated file to fix issue X or added feature Y"
+    ```
+
+4. Push your changes to the main branch:
+    ```bash
+    git push origin main
+    ```
+
 =======
 >>>>>>> 53f9d7b5fc316a9bbcc4cd77269522ebed5ee839
