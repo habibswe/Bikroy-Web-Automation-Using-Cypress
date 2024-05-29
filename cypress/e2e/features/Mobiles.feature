@@ -1,25 +1,17 @@
-Feature: Open OrangeHRM End to End
+Feature: Open Bikroy End to End
 
 Background: Open Website With Valid url
      Given Open Browser and Visit Website
 
- Scenario:Verify that user Login with Invalid Username
-     When Enter the user login with  invalid username
-         | Username |  | Password |
-         | dmin    |  | admin123 |
-     Then Click The Login Button
+ Scenario:Verify that user can search mobiles as per condition
+     Then click on mobiles icon
+     When Check that bikroy logo is present
+     Then click on mobiles icon
+     Then click on mobiles icon
+     Then click on mobiles icon
+     Then click on mobiles icon
+     Then click on mobiles icon
 
- Scenario:Verify that user Login with Invalid Password
-     When Enter the user login with invalid password
-         | Username |  | Password |
-         | Admin    |  | admi |
-      Then Click The Login Button for invalid password
-
- Scenario:Verify that user Login with valid Username and Password
-     When Enter the user login with valid username & password
-         | Username |  | Password |
-         | Admin    |  | admin123 |
-      Then Click The Login Button with Valid Username & Password
 
 
 

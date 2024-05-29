@@ -1,9 +1,9 @@
 import {Given,When,Then} from "@badeball/cypress-cucumber-preprocessor";
-import homePages from "../../Locators/home"; //home steps commands to connect with homestep to home.js
+import mobilesPages from "../../Locators/mobiles"; //mobiles steps commands to connect with mobilesSteps to mobiles.js
 import allData from '../../data/data' // date.js page connected to URL & time wait.
 import 'cypress-file-upload';           //import cypress file upload 
 Cypress.config('defaultCommandTimeout', 60000) // time wait
-const locator = new homePages(); 
+const locator = new mobilesPages(); 
 const data = new allData();
 
 Given('Open Browser and Visit Website',()=> {
