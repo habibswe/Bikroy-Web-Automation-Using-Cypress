@@ -30,10 +30,3 @@ Scenario: Verify that browse items by category is visible
       Then Check that Overseas Jobs logo is present
 
 
-
-# Scenario: Verify The Job delete Confirmation
-#     When open admin panel
-#     Then Go to job board
-#     Then Click the job title
-#     Then Delete this job
-#     Then Confirm delete
