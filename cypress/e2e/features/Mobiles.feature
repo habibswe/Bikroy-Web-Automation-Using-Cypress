@@ -2,92 +2,31 @@ Feature: Open Bikroy End to End
 
 Background: Open Website With Valid url
      Given Open Browser and Visit Website
+     When Check that bikroy logo is present
 
  Scenario:Verify that user can search mobiles as per condition
      Then click on mobiles icon
      When Check that bikroy logo is present
-     Then click on mobiles icon
-     Then click on mobiles icon
-     Then click on mobiles icon
-     Then click on mobiles icon
-     Then click on mobiles icon
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    # And click the collectors id & select delhi
- 
-       
-
-
-    # And Click The LanguageDrop Dropdown Button
-    # And Select English From LanguageDrop
-    # And Click Button which saves
-    # And Saved Successfully PoP Up is Showing And Then Click OK
-    # And Click on rafaree Email & Enter candidate email ID
-    #     | email_id | automa8e405@gmail.com |
-
-
-
-
-
-    # And Click The Next Button
-    # And Click The Title Dropdown Button
-    # And Select Title From The Title Dropdown Menu
-    # And Fill up candidate name and father name
-    #     | first_name  |automatddin|
-    #     | father_name |automadsfton|
-    # And Select date of birth from calender
-    # And Select Male From Gender Dropdown List
-    # And Click The Maritial Status Dropdown Button and Select Single
-    # And Enter The Nationality
-    #     | nationality  |udadas|
-    # And Click The Add Contact Details Plus Icon
-    # And Click The Select Dropdown Onption
-    # And Enter candidate mobile Number
-    #     | mobile_number |3241234123|
-    # And Click The Add Contact Details Plus Icon Agin
-    # And Click The Select Dropdown Option Again
-    # And Enter candidate email ID
-    #     | email_id | automa8e405@gmail.com |
-    # And Click The Save Button
-    # And Saved Successfully PoP Up is Showing And Then Clicking OK
-    # And Clicks The Next Button    
+     Then check that select location is present
+     Then click on select  location
+     Then check that dhaka options is present
+     Then click on dhaka
+     Then check that mirpur is present
+     Then click on mirpur
+     Then check that short results by is present
+     Then click on short results by box
+     Then check that sort by is present
+     Then click on sort by newest
+     Then check that filter ads by is present
+     Then check that urgent is present
+     Then click on urgent
+     Then check that type of poster is present
+     Then click on options box
+     Then click on all options
+     Then check that category is present
+     Then check that mobiles is present
+     Then click on all mobile phones
+     Then check that search box is present
+     Then click on search box
+    #  Then click on search icon
+     Then check that result is present
