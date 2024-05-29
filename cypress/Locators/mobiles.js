@@ -2,33 +2,24 @@ class mobilesPages {
     /******************************************
        *  Case Register locators  *
        * ****************************************/
-    // logo = "//a[@title='Bikroy - the largest marketplace in Bangladesh']"
-    // search_box = "//input[@placeholder='What are you looking for?']"
-    // search = "//button[@type='submit']"
-    // mobiles = "//p[normalize-space()='Mobiles']"
-    // electrics = "//p[normalize-space()='Electronics']"
-    // vehicles = "//p[normalize-space()='Vehicles']"    
-    // property = "//p[normalize-space()='Property']"       
-    // homeLiving = "//p[normalize-space()='Home & Living']"    
-    // petsAnimals = "//p[normalize-space()='Pets & Animals']" 
-    // mensFashion = "//a[@href='/en/ads/bangladesh/mens-fashion']//div[@class='info--uF0qH']//p[@class='info-title--3CkVD']"
-    // womensFashion = "//a[@href='/en/ads/bangladesh/womens-fashion']//div[@class='info--uF0qH']//p[@class='info-title--3CkVD']"
-    // hobbiesSportsGrooming = "//p[normalize-space()='Hobbies, Sports & Kids']"
-    // businessIndustry = "//p[normalize-space()='Business & Industry']"
-    // education = "//p[normalize-space()='Education']"
-    // essentials = "//p[normalize-space()='Essentials']"
-    // agriculture = "//p[normalize-space()='Agriculture']"
-    // jobs = "//p[normalize-space()='Jobs']"
-    // services ="//p[normalize-space()='Services']"
-    // overseas = "//p[normalize-space()='Overseas Jobs']"
-
-
-
-
-
-
-
-
-
+    location="//button[normalize-space()='Select Location']"
+    dhaka="//div[contains(@class,'name--4feK3')][normalize-space()='Dhaka']"
+    mirpur="//div[contains(text(),'Mirpur')]"
+    shortBy="//div[@class='heading--2cG1A']"
+    shortByBox="//span[contains(text(),'Date: Newest on top')]"
+    newest="//li[@id='date_desc']"
+    filterBy="//div[@class='heading--2cG1A']"
+    urgent="//label[@for='checkbox_id_0']//span[@class='label-text-span--2LWsk']"
+    typePoster="//div[@class='poster-dropdown-wrapper--iM5gh']//label[@id='dropdown-label-2']"
+    typePosterBox="//span[@class='popover--3tlT1']//span//button[@id='dd-button']"
+    all="//li[@id='all_posters']"
+    category="//div[normalize-space()='Category']"
+    mobiles="//span[contains(text(),'Mobiles')]"
+    mobilePhones="//span[normalize-space()='Mobile Phones']"
+    search_box="//input[@placeholder='What are you looking for?']"
+    search="//button[@type='submit']"
+    showResult="//h1[@class='heading--2eONR undefined ad-list-header--3g7Pb block--3v-Ow']"
+    mobile1= "//p[normalize-space()='Mobiles']"
+    iphone="//button[@class='btn--1gFez default--T8kE3 small--1MQ15 search-button--2ggsY']"
 }
-export default homePages;
+export default mobilesPages;//chEnge this also
