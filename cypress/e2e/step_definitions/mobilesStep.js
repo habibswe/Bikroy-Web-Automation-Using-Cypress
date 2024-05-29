@@ -6,112 +6,137 @@ Cypress.config('defaultCommandTimeout', 60000) // time wait
 const locator = new mobilesPages(); 
 const data = new allData();
 
-Given('Open Browser and Visit Website',()=> {
-    // Enter the URL
-    cy.visit(data.bikroy_url);
-    });
-    When('Check that bikroy logo is present', () => {
-        //Check that bikroy logo
-        cy.wait(2000);
-        cy.xpath(locator.logo).should('be.visible')
-        });
-    Then('Click on search box', ()=> {
-        cy.xpath(locator.search_box).should('be.visible')
-        cy.xpath(locator.search_box).click()
+// Given('Open Browser and Visit Website',()=> {
+//     // Enter the URL
+//     cy.visit(data.bikroy_url);
+//     });
+//     When('Check that bikroy logo is present', () => {
+//         //Check that bikroy logo
+//         cy.wait(2000);
+//         cy.xpath(locator.logo).should('be.visible')
+//         });
+    Then('click on mobiles icon', ()=> {
+        cy.xpath(locator.mobile1).should('be.visible')
+        cy.xpath(locator.mobile1).click()
         cy.wait(2000)
      });
-    When('Enter text to search option', () => {     
+    When('check that select location is present', () => {     
        //type iphone input text
        cy.wait(2000);
-       cy.xpath(locator.search_box).should('be.visible')
-       cy.xpath(locator.search_box).type('iphone');
+       cy.xpath(locator.location).should('be.visible')
+    //    cy.xpath(locator.search_box).type('iphone');
        });
-    Then('Click on search option',  ()=> {              
-       cy.xpath(locator.search).should('be.visible')
-       cy.xpath(locator.search).click()
+    Then('click on select  location',  ()=> {              
+    //    cy.xpath(locator.search).should('be.visible')
+       cy.xpath(locator.location).click()
        cy.wait(2000)
       });
-    When('Back to the previous page', () => {   
-        //Back to the previous page
-        cy.go('back');
-        });
-    When('Check that Mobiles logo is present', () => {   
+   
+    When('check that dhaka options is present', () => {   
         //Check mobiles text
-        cy.xpath(locator.mobiles).should('be.visible');
+        cy.xpath(locator.dhaka).should('be.visible');
         // cy.xpath(locator.mobiles).click()
         });
-    Then('Check that Electronics logo is present',  ()=> {              
-        cy.xpath(locator.electrics).should('be.visible')
-        // cy.xpath(locator.electrics).click()
+    Then('click on dhaka',  ()=> {              
+        // cy.xpath(locator.electrics).should('be.visible')
+        cy.xpath(locator.dhaka).click()
         cy.wait(2000)
         });
-    Then('Check that Vehicles logo is present',  ()=> {              
-        cy.xpath(locator.vehicles).should('be.visible')
+    Then('check that mirpur is present',  ()=> {              
+        cy.xpath(locator.mirpur).should('be.visible')
         // cy.xpath(locator.vehicles).click()
         cy.wait(2000)
         });    
-    Then('Check that Property logo is present',  ()=> {              
-        cy.xpath(locator.property).should('be.visible')
-        // cy.xpath(locator.property).click()
+    Then('click on mirpur',  ()=> {              
+        // cy.xpath(locator.property).should('be.visible')
+        cy.xpath(locator.mirpur).click()
         cy.wait(2000)
         });
-    Then('Check that Home & Living logo is present',  ()=> {              
-        cy.xpath(locator.homeLiving).should('be.visible')
+    Then('check that short results by is present',  ()=> {              
+        cy.xpath(locator.shortBy).should('be.visible')
         // cy.xpath(locator.homeLiving).click()
         cy.wait(2000)
         });
-    Then('Check that Pets & Animals logo is present',  ()=> {              
-        cy.xpath(locator.petsAnimals).should('be.visible')
-        // cy.xpath(locator.petsAnimals).click()
+    Then('click on short results by box',  ()=> {              
+        // cy.xpath(locator.shortByBox).should('be.visible')
+        cy.xpath(locator.shortByBox).click()
         cy.wait(2000)
         });
-    Then('Check that Mens Fashion & Grooming logo is present',  ()=> {              
-        cy.xpath(locator.mensFashion).should('be.visible')
+    Then('check that sort by is present',  ()=> {              
+        cy.xpath(locator.newest).should('be.visible')
         // cy.xpath(locator.mensFashion).click()
          cy.wait(2000)
         });
-    Then('Check that Womens Fashion & Beauty logo is present',  ()=> {              
-        cy.xpath(locator.womensFashion).should('be.visible')
-        // cy.xpath(locator.womensFashion).click()
+    Then('click on sort by newest',  ()=> {              
+        // cy.xpath(locator.womensFashion).should('be.visible')
+        cy.xpath(locator.newest).click()
         cy.wait(2000)
         });   
-    Then('Check that Hobbies,Sports & kids logo is present',  ()=> {              
-        cy.xpath(locator.hobbiesSportsGrooming).should('be.visible')
+    Then('check that filter ads by is present',  ()=> {              
+        cy.xpath(locator.filterBy).should('be.visible')
         // cy.xpath(locator.hobbiesSportsGrooming).click()
         cy.wait(2000)
         }); 
-    Then('Check that business & industry logo is present',  ()=> {              
-        cy.xpath(locator.businessIndustry).should('be.visible')
+    Then('check that urgent is present',  ()=> {              
+        cy.xpath(locator.urgent).should('be.visible')
         // cy.xpath(locator.businessIndustry).click()
         cy.wait(2000)
         }); 
-    Then('Check that education logo is present',  ()=> {              
-        cy.xpath(locator.education).should('be.visible')
-                // cy.xpath(locator.education).click()
+    Then('click on urgent',  ()=> {              
+        // cy.xpath(locator.education).should('be.visible')
+                cy.xpath(locator.urgent).click()
                 cy.wait(2000)
                 }); 
-    Then('Check that Essentials logo is present',  ()=> {              
-        cy.xpath(locator.essentials).should('be.visible')
+    Then('check that type of poster is present',  ()=> {              
+        cy.xpath(locator.typePoster).should('be.visible')
         // cy.xpath(locator.essentials).click()
         cy.wait(2000)
                     }); 
-    Then('Check that agriculture logo is present',  ()=> {              
-        cy.xpath(locator.agriculture).should('be.visible')
-        // cy.xpath(locator.agriculture).click()
+    Then('click on options box',  ()=> {              
+        // cy.xpath(locator.agriculture).should('be.visible')
+        cy.xpath(locator.typePosterBox).click()
         cy.wait(2000)
         }); 
-    Then('Check that Jobs logo is present',  ()=> {              
-        cy.xpath(locator.jobs).should('be.visible')
-        // cy.xpath(locator.jobs).click()
+    Then('click on all options',  ()=> {              
+        // cy.xpath(locator.jobs).should('be.visible')
+        cy.xpath(locator.all).click()
         cy.wait(2000)
         }); 
-    Then('Check that Services logo is present',  ()=> {              
-        cy.xpath(locator.services).should('be.visible')
+    Then('check that category is present',  ()=> {              
+        cy.xpath(locator.category).should('be.visible')
         // cy.xpath(locator.services).click()
         cy.wait(2000)
         }); 
-    Then('Check that Overseas Jobs logo is present',  ()=> {              
-        cy.xpath(locator.overseas).should('be.visible')
+    Then('check that mobiles is present',  ()=> {              
+        cy.xpath(locator.mobiles).should('be.visible')
         // cy.xpath(locator.overseas).click()
         cy.wait(2000)
         }); 
+
+    Then('click on all mobile phones', ()=> {
+        cy.xpath(locator.mobilePhones).should('be.visible')
+        cy.xpath(locator.mobilePhones).click()
+        cy.wait(2000)
+     });
+     Then('check that search box is present', ()=> {
+        cy.xpath(locator.search_box).should('be.visible')
+        // cy.xpath(locator.mobilePhones).click()
+        cy.wait(2000)
+     });
+     Then('click on search box', ()=> {
+        // cy.xpath(locator.mobilePhones).should('be.visible')
+        cy.xpath(locator.search_box).click()
+        cy.xpath(locator.search_box).type('iphone{enter}')
+        // cy.xpath(locator.iphone).click()
+        cy.wait(2000)
+     });
+    //  Then('click on search icon ', ()=> {
+    //     // cy.xpath(locator.search).should('be.visible')
+    //     cy.xpath(locator.search).click()
+    //     cy.wait(2000)
+    //  });
+     Then('check that result is present', ()=> {
+        cy.xpath(locator.showResult).should('be.visible')
+        // cy.xpath(locator.mobilePhones).click()
+        cy.wait(2000)
+     });
